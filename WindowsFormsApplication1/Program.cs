@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysDBTools.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,8 +17,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            SysDBTools.DBTools.startBackup();
-            Application.Run();
+            Application.Run(new Main());
         }
     }
 }
